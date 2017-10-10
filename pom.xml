@@ -184,7 +184,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                          <outputDirectory>${project.build.directory}/liberty/wlp/usr/servers/defaultServer/dropins</outputDirectory>
+                          <outputDirectory>${project.build.directory}/liberty/wlp/usr/servers/defaultServer/apps</outputDirectory>
                           <resources>
                             <resource>
                               <directory>${project.build.directory}</directory>
