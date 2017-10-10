@@ -1,4 +1,4 @@
-FROM websphere-liberty:beta
+FROM websphere-liberty:webProfile7
 MAINTAINER IBM Java engineering at IBM Cloud
 COPY /target/liberty/wlp/usr/servers/defaultServer /config/
 RUN ls -al /config/
