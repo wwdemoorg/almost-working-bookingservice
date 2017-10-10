@@ -11,3 +11,5 @@ RUN \
     && java -jar /tmp/license.jar -acceptLicense /opt/ibm \
     && rm /tmp/license.jar; \
   fi
+
+ENV MONGO_HOST=booking-db
