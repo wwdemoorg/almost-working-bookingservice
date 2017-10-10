@@ -13,8 +13,8 @@ spec:
         prometheus.io/port: "9080"
     spec:
       containers:
-      - name: bookingservice-java
-        image: bookingservice-java:latest
+      - name: bookingservice
+        image: bookingservice:latest
         ports:
           - containerPort: 9080
           - containerPort: 9443
