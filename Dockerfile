@@ -1,6 +1,10 @@
 FROM websphere-liberty:beta
 MAINTAINER IBM Java engineering at IBM Cloud
 COPY /target/liberty/wlp/usr/servers/defaultServer /config/
+COPY target/bookingservice-1.0-SNAPSHOT.war /config/apps/
+RUN ls -al /config/
+RUN ls -al /config/apps/
+RUN ls -al /config/dropins/
 # Install required features if not present
 RUN installUtility install --acceptLicense defaultServer
 # Upgrade to production license if URL to JAR provided
